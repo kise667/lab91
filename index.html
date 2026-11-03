@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Prep Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo-link">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="9" height="9" rx="1.5" fill="#2563EB"/><rect x="13" y="2" width="9" height="9" rx="1.5" fill="#2563EB"/><rect x="2" y="13" width="9" height="9" rx="1.5" fill="#2563EB"/><rect x="13" y="13" width="9" height="9" rx="1.5" fill="#2563EB"/></svg>
+      <span class="logo-text">forma</span>
+    </a>
+
+    <input type="checkbox" id="burger" class="burger-checkbox">
+    <label for="burger" class="burger-label"><span></span><span></span><span></span></label>
+
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+      <a href="#form" class="btn btn-secondary">Check Your Level</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="badge">International Exam Center</span>
+        <h1>Pass IELTS with 7.5+ on the First Attempt</h1>
+        <p>Master proven academic strategies from certified native examiners.</p>
+        <a href="#form" class="btn btn-primary btn-large">Take a Trial Test</a>
+      </div>
+    </section>
+
+    <section class="grid-section" id="courses">
+      <div class="card-grid">
+        <article class="card"><h3>🎧 Listening</h3><p>Accent perception & audio distraction filters.</p></article>
+        <article class="card"><h3>📖 Reading</h3><p>Skimming, scanning & keyword mapping.</p></article>
+        <article class="card"><h3>✍️ Writing</h3><p>Task 1 dynamic charts & Task 2 academic essays.</p></article>
+        <article class="card"><h3>🗣️ Speaking</h3><p>Live mock simulations & fluency exercises.</p></article>
+      </div>
+    </section>
+
+    <section class="form-section" id="form">
+      <div class="form-card">
+        <h2>Apply for Level Placement</h2>
+        <form class="feedback-form" action="#" method="POST">
+          <input type="text" name="name" required placeholder="Full Name" class="form-input">
+          <input type="email" name="email" required placeholder="Email Address" class="form-input">
+          <input type="tel" name="contact" required placeholder="Telegram / WhatsApp" class="form-input">
+          <select name="cefr" required class="form-input">
+            <option value="" disabled selected>Select CEFR Level</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="C1">C1</option>
+          </select>
+          <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 2026 GlobalExam | License #ICT-6001</p>
+      <nav class="footer-nav">
+        <a href="https://www.ielts.org" target="_blank">IELTS</a>
+        <a href="https://www.ets.org/toefl" target="_blank">TOEFL</a>
+      </nav>
+      <button type="button" id="theme-toggle" class="btn-theme">Theme 🌙/☀️</button>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
+</body>
+</html>
